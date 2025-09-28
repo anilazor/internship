@@ -40,12 +40,16 @@ img {
 
 html {
   scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--light-blue);
   border-right: var(--border);
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
@@ -107,11 +111,11 @@ p,
 /* header styling */
 
 header {
+  display: flex;
   color: var(--blue);
   border: 0.5px solid var(--blue);
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+
   text-wrap: nowrap;
   position: sticky;
   top: 0;
@@ -119,6 +123,7 @@ header {
   z-index: 7;
   background-color: #ebeffe;
   box-shadow: inset var(--turquoise-shadow);
+  height: 60px;
 }
 
 header .left {
@@ -126,17 +131,23 @@ header .left {
   height: 100%;
   width: 45px;
   min-width: 45px;
-}
-header .left img {
   display: flex;
+  justify-content: center;
 }
 
 header .middle {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+header .middle.top {
   font-family: "Petit Formal Script";
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   text-shadow: 0px 1px 2px var(--blue);
-  margin-left: -4%;
+  padding-bottom: 0.5rem;
 }
 header .right ul {
   font-family: "Nimbus Sans D OT";
@@ -146,6 +157,8 @@ header .right ul {
   font-size: 0.6rem;
   margin-right: 1rem;
   text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
 }
 
 a {
@@ -269,7 +282,7 @@ a:hover {
   width: 90%;
   height: 100%;
   padding: 1rem 0rem 2.5rem 1rem;
-  min-width: 390px;
+  /* min-width: 390px; */
 }
 
 .textion ul {
