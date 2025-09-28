@@ -440,13 +440,17 @@ section .work {
 }
 
 @media screen and (min-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+  }
   header .middle-content {
     display: flex;
     justify-content: left, space-between;
     align-items: center;
-    gap: 40vw;
+    gap: 20%;
     width: 90vw;
     margin: 0;
+    padding-right: 1.5rem;
   }
 
   header .middle.top {
@@ -540,7 +544,6 @@ section .work {
 
   header .middle-content {
     gap: 10vw;
-    padding-right: 1.5rem;
   }
 
   header .right ul {
