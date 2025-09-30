@@ -9,14 +9,20 @@ img {
   width: 100%;
 }
 
-@import url("https://fonts.cdnfonts.com/css/nimbus-sans-d-ot");
+/* @import url("https://fonts.cdnfonts.com/css/nimbus-sans-d-ot");
 
 .nimbus-sans-dot {
   font-family: "Nimbus Sans D OT", sans-serif;
   font-weight: light;
   font-style: normal;
-}
+} */
 
+@font-face {
+  font-family: "Nimbus Sans D OT Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Nimbus Sans D OT Light"), url("Nimbus-Sans-D-OT-Light_32752.woff") format("woff");
+}
 @import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
 
 .petit-formal-script-regular {
@@ -109,7 +115,7 @@ h4 {
 
 p,
 .traits {
-  font-family: "Nimbus Sans D OT";
+  font-family: "Nimbus Sans D OT Light";
   color: var(--dark-blue);
   line-height: 180%;
   font-size: 12px;
@@ -150,7 +156,7 @@ header .middle.top {
 }
 
 header .right ul {
-  font-family: "Nimbus Sans D OT";
+  font-family: "Nimbus Sans D OT Light";
   display: flex;
   gap: 0.5rem;
   list-style: none;
@@ -160,7 +166,7 @@ header .right ul {
 }
 
 a {
-  font-family: "Nimbus Sans D OT";
+  font-family: "Nimbus Sans D OT Light";
   color: var(--blue);
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -303,7 +309,6 @@ a:hover {
   background-color: var(--light-turqoise);
   width: 100%;
   position: relative;
-  /* background-image: url(/imgs/gradient.png); */
   background-blend-mode: multiply;
   background-size: cover;
   background-position: top right;
